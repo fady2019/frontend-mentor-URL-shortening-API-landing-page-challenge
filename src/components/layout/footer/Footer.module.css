@@ -1,0 +1,95 @@
+.footer {
+  background-color: var(--very-dark-violet);
+  padding: 50px 0 60px;
+}
+
+.footer-container,
+.footer-content {
+  display: flex;
+}
+
+.logo {
+  filter: brightness(0.6) invert(1);
+}
+
+.footer-content h3 {
+  color: #fff;
+  margin-top: 0;
+}
+
+.footer-content ul li {
+  margin: 6px 0;
+}
+
+.footer-content ul li:hover a {
+  color: var(--cyan);
+}
+
+.social {
+  display: flex;
+  gap: 8px;
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+  background-color: #fff;
+  margin: 5px 10px;
+  cursor: pointer;
+}
+
+.icon:hover {
+  background-color: var(--cyan);
+}
+
+.facebook-icon {
+  mask: url(../../../assets/icon-facebook.svg) no-repeat center;
+  -webkit-mask: url(../../../assets/icon-facebook.svg) no-repeat center;
+}
+
+.twitter-icon {
+  mask: url(../../../assets/icon-twitter.svg) no-repeat center;
+  -webkit-mask: url(../../../assets/icon-twitter.svg) no-repeat center;
+}
+
+.pinterest-icon {
+  mask: url(../../../assets/icon-pinterest.svg) no-repeat center;
+  -webkit-mask: url(../../../assets/icon-pinterest.svg) no-repeat center;
+}
+
+.instagram-icon {
+  mask: url(../../../assets/icon-instagram.svg) no-repeat center;
+  -webkit-mask: url(../../../assets/icon-instagram.svg) no-repeat center;
+}
+
+@media screen and (min-width: 769px) {
+  .footer-container {
+    gap: 25px;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .footer-content {
+    gap: 80px;
+    flex-wrap: wrap;
+    max-width: 70%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .footer-container,
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-container {
+    gap: 40px;
+  }
+
+  .footer-content {
+    gap: 30px;
+    justify-content: center;
+    text-align: center;
+  }
+}

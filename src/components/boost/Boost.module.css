@@ -1,0 +1,9 @@
+.boost {
+  background-color: var(--dark-violet);
+  background-image: url(../../assets/bg-shorten-desktop.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: center;
+  padding: 20px 0 30px;
+  color: #fff;
+}

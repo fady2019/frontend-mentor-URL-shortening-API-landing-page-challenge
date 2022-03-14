@@ -1,0 +1,25 @@
+.statistics {
+  padding-top: 60px;
+  padding-bottom: 100px;
+}
+
+.statistics > h2,
+.statistics > p {
+  text-align: center;
+}
+
+.statistics > p {
+  color: var(--grayish-violet);
+}
+
+@media screen and (max-width: 900px) {
+  .statistics {
+    padding-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .statistics > p {
+    padding: 0 30%;
+  }
+}

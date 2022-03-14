@@ -1,0 +1,35 @@
+.menu-btn {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.menu-btn .menu-ham,
+.menu-btn .menu-ham-before,
+.menu-btn .menu-ham-after {
+  display: block;
+  width: 40px;
+  height: 4px;
+  border-radius: 5px;
+  background-color: var(--grayish-violet);
+  float: right;
+  transition: all 0.35s ease-in-out;
+}
+
+.menu-btn.opened .menu-ham {
+  transform: translateX(-40px);
+  background-color: transparent;
+}
+
+.menu-btn.opened .menu-ham-before {
+  transform: rotate(45deg) translate(5.5px, 7px);
+}
+
+.menu-btn.opened .menu-ham-after {
+  transform: rotate(-45deg) translate(5.5px, -7px);
+}
